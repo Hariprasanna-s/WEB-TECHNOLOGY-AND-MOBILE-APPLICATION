@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online College Notice Board - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate_reg.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+<form name="regForm" onsubmit="return validateForm()">
+
+    <div class="form-grid">
+
+        <div>
+            <label>First Name</label>
+            <input type="text" name="fname">
+        </div>
+
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lname">
+        </div>
+		
+		<div>
+            <label>Roll Number</label>
+            <input type="text" name="roll">
+        </div>
+
+        <div>
+            <label>Department</label>
+            <select name="dept">
+                <option value="">--Select Department--</option>
+                <option>CSE</option>
+                <option>AIML</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Year</label>
+            <select name="year">
+                <option value="">--Select Year--</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+        </div>
+
+        <div>
+            <label>Email ID</label>
+            <input type="text" name="email">
+        </div>
+
+        <div>
+            <label>Mobile Number</label>
+            <input type="text" name="mobile">
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="password">
+        </div>
+
+        <!-- Full width fields -->
+        <div class="full">
+            <label>Address</label>
+            <textarea name="address"></textarea>
+        </div>
+
+        <div class="full terms">
+            <input type="checkbox" name="terms"> I agree to the Terms & Conditions
+        </div>
+
+    </div>
+
+    <input type="submit" value="Register">
+</form>
+</div>
+
+</body>
+</html>
